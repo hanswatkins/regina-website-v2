@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/fullpage.js/dist/fullpage.min.css"
+		/>
+		<style>
+			.section {
+			}
+			h1 {
+				font-size: 5em;
+				font-family: Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				text-align: center;
+				color: white;
+				margin-bottom: 1px;
+			}
+			h2 {
+				font-size: 2em;
+				font-family: Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				text-align: center;
+				color: white;
+				margin-top: 1px;
+			}
+		</style>
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="fullpage">
+			<div class="section">
+				<h1>Regina Doria</h1>
+				<h2>Data Analyst</h2>
+			</div>
+			<div class="section">
+				<h1>Projects</h1>
+			</div>
+			<div class="section">a section</div>
+		</div>
+		<script src="./fullpage.dropEffect.min.js"></script>
+		<script src="https://unpkg.com/fullpage.js/dist/fullpage.extensions.min.js"></script>
+
+		<script>
+			new fullpage('#fullpage', {
+				sectionsColor: ['#ff5f45', '#0798ec', '#fec401'],
+				dropEffect: true,
+			});
+		</script>
+	</body>
+</html>
